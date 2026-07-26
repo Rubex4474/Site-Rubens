@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rubens Stockmann — Transformo Anúncios em Clientes</title>
+<meta name="description" content="Gestão de Tráfego Pago com foco em ROI. Mais de R$1,3 milhão gerenciados em Meta Ads e Google Ads. Estratégia, transparência e crescimento previsível.">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Background noise / grid layer -->
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- Shared fixed scene layer: crossfades hero video into autoridade video on scroll -->
+<div class="scene-bg" aria-hidden="true">
+  <div class="scene-layer scene-layer-hero">
+    <video class="scene-video" autoplay muted loop playsinline poster="assets/hero-workstation.png">
+      <source src="assets/videos/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-layer scene-layer-authority">
+    <video class="scene-video" autoplay muted loop playsinline poster="assets/autoridade-roi.jpeg">
+      <source src="assets/videos/autoridade.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-layer scene-layer-metodo">
+    <video class="scene-video" autoplay muted loop playsinline poster="assets/metodo-rede.png">
+      <source src="assets/videos/metodo.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-layer scene-layer-diferenciais">
+    <video class="scene-video" autoplay muted loop playsinline poster="assets/diferenciais-escudo.png">
+      <source src="assets/videos/diferenciais.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-layer scene-layer-servicos">
+    <video class="scene-video" autoplay muted loop playsinline poster="assets/servicos-icones.png">
+      <source src="assets/videos/servicos.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-layer scene-layer-cta">
+    <video class="scene-video" autoplay muted loop playsinline poster="assets/cta-portal.png">
+      <source src="assets/videos/cta.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-shade"></div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="logo">RUBENS<span>STOCKMANN</span></a>
+
+    <nav class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#como-funciona">Método</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#cases">Cases</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a href="#" class="btn btn-primary btn-nav whatsapp-link" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a9.9 9.9 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.22 8.22 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.71 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.99-1.22-.74-.65-1.23-1.46-1.38-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.47-.01a.9.9 0 0 0-.66.31c-.23.24-.86.85-.86 2.08 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+      Falar no WhatsApp
+    </a>
+
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre">Sobre</a>
+  <a href="#como-funciona">Método</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#cases">Cases</a>
+  <a href="#faq">FAQ</a>
+  <a href="#" class="btn btn-primary whatsapp-link" target="_blank" rel="noopener">Falar no WhatsApp</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-inner hero-inner-centered">
+      <div class="hero-copy-centered" data-reveal>
+        <span class="eyebrow">Gestão de Tráfego Pago · Meta Ads &amp; Google Ads</span>
+        <h1 class="hero-title">Transformo <span class="text-gradient">anúncios</span> em clientes.</h1>
+        <p class="hero-subtitle">
+          Mais de <strong>R$ 1,3 milhão</strong> gerenciados em campanhas, com foco total em ROI e método próprio.
+          Não vendo anúncios — vendo crescimento previsível para o seu negócio.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary btn-lg whatsapp-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a9.9 9.9 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.22 8.22 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.71 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.99-1.22-.74-.65-1.23-1.46-1.38-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.47-.01a.9.9 0 0 0-.66.31c-.23.24-.86.85-.86 2.08 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a href="#cases" class="btn btn-ghost btn-lg">
+            Ver Cases de Sucesso
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-pill">
+            <span class="chip-value">R$ 1,3M+</span>
+            <span class="chip-label">gerenciados</span>
+          </div>
+          <div class="hero-stat-pill">
+            <span class="chip-value">ROI</span>
+            <span class="chip-label">foco total</span>
+          </div>
+          <div class="hero-stat-pill">
+            <span class="chip-value">100%</span>
+            <span class="chip-label">personalizado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#autoridade" class="scroll-indicator" aria-label="Rolar para baixo">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ AUTORIDADE / NÚMEROS ============ -->
+  <section class="authority" id="autoridade">
+    <div class="section-inner authority-centered">
+      <div class="stats-grid">
+        <div class="stat-card" data-reveal>
+          <span class="stat-number" data-counter data-target="1.3" data-decimals="1" data-prefix="R$ " data-suffix="M+">0</span>
+          <span class="stat-label">Gerenciados em anúncios</span>
+        </div>
+        <div class="stat-card" data-reveal data-reveal-delay="1">
+          <span class="stat-number stat-number-text">ROI</span>
+          <span class="stat-label">Foco em cada estratégia</span>
+        </div>
+        <div class="stat-card" data-reveal data-reveal-delay="2">
+          <span class="stat-number" data-counter data-target="100" data-suffix="%">0</span>
+          <span class="stat-label">Estratégias personalizadas</span>
+        </div>
+        <div class="stat-card" data-reveal data-reveal-delay="3">
+          <span class="stat-number stat-number-text">Previsível</span>
+          <span class="stat-label">Crescimento estruturado</span>
+        </div>
+      </div>
+
+      <div class="authority-badges" data-reveal data-reveal-delay="4">
+        <div class="badge-box">
+          <img src="assets/google-partner.webp" alt="Google Partner">
+        </div>
+        <div class="badge-box">
+          <img src="assets/meta-partner.png" alt="Meta Business Partner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE MIM ============ -->
+  <section class="about" id="sobre">
+    <div class="section-inner about-grid">
+      <div class="about-visual" data-reveal>
+        <img src="assets/rubens-foto.png" alt="Rubens Stockmann, especialista em gestão de tráfego pago" class="frame-image about-photo">
+        <div class="frame-shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="about-copy" data-reveal data-reveal-delay="1">
+        <span class="eyebrow">Sobre mim</span>
+        <h2 class="section-title">Mais do que anúncios, <span class="text-gradient">estratégia de aquisição.</span></h2>
+        <p class="body-lg">
+          Meu nome é Rubens Stockmann e há anos ajudo empresários a transformar investimento em anúncios em
+          resultado real de caixa. Já são mais de <strong>R$ 1,3 milhão</strong> gerenciados entre Meta Ads e Google Ads —
+          e em cada real investido, o único indicador que importa de verdade é o retorno.
+        </p>
+        <p class="body-lg">
+          Meu trabalho não termina na criação de uma campanha. Ele começa com diagnóstico, passa por planejamento
+          estratégico e só é validado quando gera clientes previsíveis e recorrentes para o seu negócio. Por isso
+          desenvolvi um método próprio: uma estrutura repetível de diagnóstico, estratégia, implementação e escala,
+          construída sobre transparência total e atendimento próximo — sem terceirização, sem letra miúda.
+        </p>
+        <blockquote class="pull-quote">
+          "Não vendo anúncios. Vendo crescimento para empresas."
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section class="method" id="como-funciona">
+    <div class="section-inner">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Método</span>
+        <h2 class="section-title">Como funciona a gestão</h2>
+        <p class="body-lg section-subtitle">Um processo estruturado, sem achismo, do diagnóstico à escala.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <div class="timeline-step" data-reveal>
+          <span class="timeline-number">01</span>
+          <h3>Diagnóstico</h3>
+          <p>Análise completa do seu negócio, histórico de anúncios, público e concorrência antes de qualquer decisão.</p>
+        </div>
+        <div class="timeline-step" data-reveal data-reveal-delay="1">
+          <span class="timeline-number">02</span>
+          <h3>Planejamento</h3>
+          <p>Definição de metas, orçamento e canais ideais — Meta Ads, Google Ads, ou ambos — com foco em ROI.</p>
+        </div>
+        <div class="timeline-step" data-reveal data-reveal-delay="2">
+          <span class="timeline-number">03</span>
+          <h3>Estratégia</h3>
+          <p>Construção da estrutura de campanhas, funis e criativos alinhada ao método próprio.</p>
+        </div>
+        <div class="timeline-step" data-reveal data-reveal-delay="3">
+          <span class="timeline-number">04</span>
+          <h3>Implementação</h3>
+          <p>Configuração técnica, rastreamento e ativação das campanhas com precisão.</p>
+        </div>
+        <div class="timeline-step" data-reveal data-reveal-delay="4">
+          <span class="timeline-number">05</span>
+          <h3>Otimização</h3>
+          <p>Ajustes constantes com base em dados reais — nunca no achismo.</p>
+        </div>
+        <div class="timeline-step" data-reveal data-reveal-delay="5">
+          <span class="timeline-number">06</span>
+          <h3>Escala</h3>
+          <p>Aumento estruturado de investimento nas campanhas que comprovadamente geram retorno.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+  <section class="services" id="servicos">
+    <div class="section-inner">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Serviços</span>
+        <h2 class="section-title">Onde eu posso ajudar</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+          </div>
+          <h3>Gestão de Meta Ads</h3>
+          <p>Campanhas no Instagram e Facebook estruturadas para gerar clientes qualificados, não apenas cliques.</p>
+        </div>
+        <div class="service-card" data-reveal data-reveal-delay="1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18M3 12h18"/></svg>
+          </div>
+          <h3>Gestão de Google Ads</h3>
+          <p>Captação de demanda ativa em busca, display e YouTube com foco em custo por aquisição.</p>
+        </div>
+        <div class="service-card" data-reveal data-reveal-delay="2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l4-4 4 4 4-8 6 12"/></svg>
+          </div>
+          <h3>Consultoria Estratégica</h3>
+          <p>Direcionamento para times internos que já rodam tráfego, mas precisam de estrutura e clareza de ROI.</p>
+        </div>
+        <div class="service-card" data-reveal data-reveal-delay="3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M11 3a8 8 0 1 0 5.3 14L21 21"/></svg>
+          </div>
+          <h3>Auditoria de Campanhas</h3>
+          <p>Diagnóstico profundo de contas existentes para identificar vazamento de verba e oportunidades de escala.</p>
+        </div>
+        <div class="service-card" data-reveal data-reveal-delay="4">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6"/></svg>
+          </div>
+          <h3>Planejamento de Marketing</h3>
+          <p>Estrutura completa de aquisição, indo além dos anúncios: oferta, funil e posicionamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CASES ============ -->
+  <section class="cases" id="cases">
+    <div class="section-inner">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Resultados</span>
+        <h2 class="section-title">Cases de sucesso</h2>
+        <p class="body-lg section-subtitle">Espaço reservado para os resultados reais de clientes atendidos.</p>
+      </div>
+
+      <div class="feedback-switcher" data-reveal>
+        <div class="feedback-list">
+          <button class="feedback-item active" data-video="assets/videos/feedback-edson.mp4" data-type="video/mp4">
+            <strong>Feedback Edson</strong>
+            <span>Hidro Capas - Mentoria completa Imperion Digital</span>
+          </button>
+          <button class="feedback-item" data-video="assets/videos/feedback-keyla.mp4" data-type="video/mp4">
+            <strong>Feedback Keyla</strong>
+            <span>Wt Fibras - Serviço de marketing completo</span>
+          </button>
+          <button class="feedback-item" data-video="assets/videos/feedback-regiane.mp4" data-type="video/mp4">
+            <strong>Feedback Regiane</strong>
+            <span>Almeida Nunes Imobiliária - Serviço de marketing completo</span>
+          </button>
+        </div>
+
+        <div class="feedback-player">
+          <video class="feedback-video" preload="metadata" playsinline>
+            <source src="assets/videos/feedback-edson.mp4" type="video/mp4">
+          </video>
+          <button class="feedback-play-btn" aria-label="Reproduzir depoimento em vídeo">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIFERENCIAIS ============ -->
+  <section class="differentials" id="diferenciais">
+    <div class="section-inner">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Por que eu</span>
+        <h2 class="section-title">Por que escolher meu trabalho</h2>
+      </div>
+
+      <div class="differentials-grid">
+        <div class="differential-item" data-reveal>
+          <svg class="check-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Atendimento direto, sem intermediários</span>
+        </div>
+        <div class="differential-item" data-reveal data-reveal-delay="1">
+          <svg class="check-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Método validado em mais de R$1,3M gerenciados</span>
+        </div>
+        <div class="differential-item" data-reveal data-reveal-delay="2">
+          <svg class="check-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Estratégias personalizadas para cada negócio</span>
+        </div>
+        <div class="differential-item" data-reveal data-reveal-delay="3">
+          <svg class="check-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Relatórios claros, sem enrolação</span>
+        </div>
+        <div class="differential-item" data-reveal data-reveal-delay="4">
+          <svg class="check-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Otimizações constantes baseadas em dados</span>
+        </div>
+        <div class="differential-item" data-reveal data-reveal-delay="5">
+          <svg class="check-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>Crescimento previsível, não sorte</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="final-cta" id="final-cta">
+    <div class="final-cta-glow" aria-hidden="true"></div>
+    <div class="section-inner">
+      <div data-reveal>
+        <span class="eyebrow">Vamos conversar</span>
+        <h2 class="final-cta-title">Pronto para transformar <span class="text-gradient">anúncios em clientes?</span></h2>
+        <p class="body-lg section-subtitle">Fale agora comigo pelo WhatsApp e vamos entender o momento do seu negócio.</p>
+        <a href="#" class="btn btn-primary btn-xl whatsapp-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a9.9 9.9 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.22 8.22 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.71 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.99-1.22-.74-.65-1.23-1.46-1.38-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14-.01-.31-.01-.47-.01a.9.9 0 0 0-.66.31c-.23.24-.86.85-.86 2.08 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+          Falar no WhatsApp agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="section-inner faq-inner">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">Perguntas frequentes</h2>
+      </div>
+
+      <div class="section-banner section-banner-sm" data-reveal>
+        <video class="frame-image" autoplay muted loop playsinline poster="assets/faq-icones.png">
+          <source src="assets/videos/faq.mp4" type="video/mp4">
+        </video>
+        <div class="frame-shade" aria-hidden="true"></div>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item" data-reveal>
+          <button class="faq-question">
+            Qual é o investimento para começar?
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>O investimento varia conforme o escopo do projeto e a verba de mídia disponível. Em uma conversa
+            no WhatsApp, entendo seu momento atual e apresento uma proposta sob medida para o seu negócio.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-reveal data-reveal-delay="1">
+          <button class="faq-question">
+            Em quanto tempo eu vejo resultados?
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Os primeiros dados relevantes costumam aparecer nas primeiras semanas de campanha, mas resultados
+            consistentes e escaláveis fazem parte de um processo contínuo de otimização — sem promessas irreais de
+            resultado da noite para o dia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-reveal data-reveal-delay="2">
+          <button class="faq-question">
+            Como funciona a gestão no dia a dia?
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sigo o método de seis etapas — diagnóstico, planejamento, estratégia, implementação, otimização e
+            escala — com acompanhamento próximo e relatórios claros sobre o desempenho das campanhas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-reveal data-reveal-delay="3">
+          <button class="faq-question">
+            Existe contrato de fidelidade?
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>As condições contratuais são definidas de forma transparente antes do início do trabalho, sem letra
+            miúda. Os detalhes são alinhados diretamente na conversa inicial.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-reveal data-reveal-delay="4">
+          <button class="faq-question">
+            Como é o acompanhamento dos resultados?
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Atendimento direto e próximo, com relatórios periódicos claros e objetivos — sempre com foco em ROI,
+            não em métricas de vaidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <video class="footer-bg" autoplay muted loop playsinline poster="assets/footer-textura.jpeg" aria-hidden="true">
+    <source src="assets/videos/footer.mp4" type="video/mp4">
+  </video>
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo">RUBENS<span>STOCKMANN</span></a>
+      <p>Gestão de Tráfego Pago focada em ROI e crescimento previsível.</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#como-funciona">Método</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#cases">Cases</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="footer-contact">
+      <a href="#" class="footer-social-link" target="_blank" rel="noopener" data-instagram-link>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        Instagram
+      </a>
+      <a href="#" class="footer-social-link whatsapp-link" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a9.9 9.9 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2z"/></svg>
+        WhatsApp
+      </a>
+      <a href="mailto:contato@rubensstockmann.com" class="footer-social-link">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        E-mail
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="section-inner">
+      <p>&copy; <span id="year"></span> Rubens Stockmann. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
